@@ -1,0 +1,24 @@
+{% extends 'home.html' %}
+
+{% block content %}	   
+
+
+    <form method="POST" class="post-form">
+    	{% if message %}
+    		{{message}}
+		{% endif %}	
+        <div class="form-group">
+              {% csrf_token %}
+            <div class="col-xs-2">
+                <h1>Cadastro:</h1>
+				{{form|linebreaks}}
+
+				<button type="submit" class="btn btn-primary" role="button">Salvar</button>  
+            </div>  
+
+                       
+        </div> 
+    </form>
+    
+{% endblock %}        
+       
