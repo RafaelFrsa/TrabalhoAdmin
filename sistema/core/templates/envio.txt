@@ -1,0 +1,17 @@
+Olá! {{ dados.cod_cliente.name }}
+
+Obrigado pelo agendamento.
+
+Confira os dados fornecidos na sua inscrição:
+
+Nome: {{ dados.cod_cliente.name }}
+CPF: {{ dados.cod_cliente.cpf }}
+Email: {{ dados.cod_cliente.email }}
+Telefone: {{ dados }}
+
+Seu agendamento está marcado para {{dados.published_date}}
+
+Atenciosamente.
+
+-------
+{{dados.fantasia}}
