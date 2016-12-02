@@ -15,6 +15,8 @@ class Cliente(models.Model):
 	schooling = models.CharField('Esolaridade', max_length=20)
 	professing = models.CharField('Profissão', max_length=20)
 	date = models.DateField('Nascimento')
+	email = models.EmailField('e-mail')
+	phone = models.CharField('Telefone', max_length=100)
 	appliance = models.CharField('Tipo de Aparelho', max_length=100)
 	deficient = models.IntegerField('Número de Deficientes')
 	income = models.FloatField('Renda Familiar')
